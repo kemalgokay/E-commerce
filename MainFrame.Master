@@ -1,0 +1,273 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainFrame.master.cs" Inherits="Alis_Veris.MainFrame" %>
+
+<%@ Register src="Uyemi.ascx" tagname="Uyemi" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="favicon.ico" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="css/drop.css">
+        <link href='../../fonts.googleapis.com/css@family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+    	<link rel="stylesheet" type="text/css" href="css/markup.css">
+        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+        <link rel="stylesheet" type="text/css" href="css/elastislide.css">
+        <link rel="stylesheet" type="text/css" href="css/colorbox.css">
+        
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/ie8.css">
+        <![endif]-->
+        
+        <!--[if IE 7]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]--> 
+
+<!-- dropdown menu-->
+
+<!-- Initialise jQuery Library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!-- Initialise html5 placeholder -->
+<script type="text/javascript" src="js/html5placeholder.jquery.min.js"></script>
+
+<!--dropdown menu-->
+        
+        <script type="text/javascript" src="../../https@ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../../https@ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+        
+        <script type="text/javascript" src="js/html5.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+        <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+        <script type="text/javascript" src="js/tabs.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+            <div id="menu">
+            	<div class="pivot">
+                	
+                	
+               
+                   
+                    <div class="separator float-right"></div>
+                    
+                    <!-- uyelik kontrol-->  
+                    	<uc1:Uyemi ID="Uyemi1" runat="server" />
+                    <!-- uyelik kontrol-->
+
+                    <div class="separator hide-phone">
+                        
+                    </div>
+                    <div class="item"><a class="light" href="login.html"><div><span class="icon icon-heart"></span>Favori Listem (0)</div></a></div>
+                    <div class="separator"></div>
+                   
+                    <div class="item"><a class="light" href="cart.html"><div><span class="icon icon-basket"></span>Alışveriş Sepetim</div></a></div>
+                    <div class="separator"></div>
+                    
+                </div>
+            </div>
+
+            <div class="pivot">
+                <header>
+                    <div id="logo"><a href="Index.aspx"><img src="images/logo.png" alt="Oceanic Store"></a></div>
+                    <span id="search">
+                        <asp:TextBox ID="txt_arama" runat="server"></asp:TextBox>
+                        <span class="button-search">
+               
+                
+               
+                <asp:LinkButton ID="btn_ara" runat="server" onclick="btn_ara_Click">&nbsp;&nbsp;</asp:LinkButton></span></span><br>
+
+
+<asp:Panel ID="pnl_karsilama" runat="server">
+                    <span id="welcome">Hoşgeldin ziyaretçi. <a href="UyeGiris.aspx">Üye Girişi</a> yapabilir veya <a href="YeniKullanici.aspx">Yeni Hesap Oluştur</a>a bilirsin.</span>
+</asp:Panel>
+                    
+                </header>
+                
+                <nav class="nav-phone show-phone hide-desktop hide-tablet">
+                    <div>Menu</div>
+                    <select>
+                        <option>Home</option>
+                        <option>Computers</option>
+                        <option>Electronics</option>
+                        <option>Books</option>
+                        <option>Clothing</option>
+                        <option>Shoes</option>
+                        <option>Industrial</option>
+                        <option>Toys</option>
+                        <option>Watches</option>
+                        <option>Fabric</option>
+                    </select>
+                </nav>
+
+
+<!-- fth nav -->
+<div id="container">  
+
+<!----><!------------><!--/ nav-->
+    
+    
+    
+    <div class="nav blue-menu"> 
+   	  <ul>
+    		<li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
+    		<li><a class="drop" href="#">Ürünler</a>
+               <ul class="levels">
+                    <li><a href="#">Distributed Storage</a></li>
+                    <li><a href="#">Linux Hosting</a></li>
+                    <li><a href="#">Windows Hosting</a>
+                    	<ul>
+                        	<li><a href="#">Another Item</a></li>
+                            <li><a href="#">Another Item</a></li>
+                        	<li><a href="#">Another Item</a>
+                            	<ul>
+                            		<li><a href="#">Another Item</a></li>
+                            	</ul>
+                            </li>                     
+                        </ul>
+                    </li>
+                    <li><a href="#">Amazon S3</a></li>
+                    <li><a href="#">Virtualization</a></li>
+              </ul>                
+            </li>
+    		<li><a href="#">Industry News</a></li>
+    		<li><a href="#">Downloads</a></li>
+    		<li><a href="#">Tools</a></li>
+    		<li><a href="Iletisim.aspx">Iletişim</a></li>
+    	</ul><!--/ search-box-->
+      <div class="clear"></div>
+    </div><!--/ nav-->
+    
+ 
+<script type="text/javascript">
+    // Placeholders functionality
+    jQuery(function () {
+        jQuery(':input[placeholder]').placeholder();
+    });  
+</script>
+<!-- fth nav-->
+</div><div class="pivot">
+    <div id="content">
+        <div id="content-center">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</div>            <div class="ribbon">
+                <div class="top"></div>
+                <div class="pivot">
+                    <div class="center">
+                        <div class="column" id="about-us">
+                            <img class="logo" src="images/logo.png" alt="Oceanic Store">
+                          	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sagittis sem. Aliquam vitae egestas odio. Praesent euismod nunc vitae sapien cursus accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </div>
+                        
+                        <div class="column">
+                            <h2>Bize Ulaşın</h2>
+                            <ul id="contacts">
+                                <li>
+                                    <div class="icon phone"></div>
+                                    <div>0-000-000-00-00</div>
+                                    <div>0-000-000-00-00</div>
+                                </li>
+                                <li class="one">
+                                    <div class="icon fax"></div>
+                                    <div>0-000-000-00-00</div>
+                                    <div></div>
+                                </li>
+                                <li class="one">
+                                    <div class="icon email"></div>
+                                    <div>sample@sample.net</div>
+                                    <div></div>
+                                </li>
+                                <li class="one">
+                                    <div class="icon address"></div>
+                                    <div>Vidnoe 52</div>
+                                    <div></div>
+                                </li>
+                                <li class="one">
+                                    <div class="icon skype"></div>
+                                    <div>Username</div>
+                                    <div></div>
+                                </li>
+                            </ul>	
+                        </div>
+                        <div class="column hide-phone">
+                            <h2>Twitter</h2>
+                            <ul class="tweet_list">
+                                <li class="tweet_first tweet_odd">
+                                    <span class="tweet_text"><img src="images/os/avatar.png" alt="Username">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="default.htm">link</a></span>
+                                    <span class="tweet_time"><a href="default.htm" title="view tweet on twitter">about 7 hours ago</a></span>
+                                    <span class="tweet_icon"></span>
+                                </li>
+                                <li class="tweet_even">
+                                    <span class="tweet_text"><img src="images/os/avatar.png" alt="Username">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="default.htm">link</a></span>
+                                    <span class="tweet_time"><a href="default.htm" title="view tweet on twitter">about 7 hours ago</a></span>
+                                    <span class="tweet_icon"></span>
+                                </li>
+                                <li class="tweet_odd">
+                                    <span class="tweet_text"><img src="images/os/avatar.png" alt="Username">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="default.htm">link</a></span>
+                                    <span class="tweet_time"><a href="default.htm" title="view tweet on twitter">about 7 hours ago</a></span>
+                                    <span class="tweet_icon"></span>
+                                </li>
+                            </ul>	
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+            <div class="pivot">
+                <footer>
+                    <div class="column first">
+                        <h2>Bilgilendirme</h2>
+                        <ul>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="default.htm">Teslimat Bilgileri</a></li>
+                            <li><a href="default.htm">Gizlilik Politikası</a></li>
+                            <li><a href="default.htm">Şartlar ve Koşullar</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2>Müşteri Hizmetleri</h2>
+                        <ul>
+                            <li><a href="contacts.html">Bize Ulaşın</a></li>
+                            <li><a href="default.htm">Returns</a></li>
+                            <li><a href="sitemap.html">Site Haritası</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2>Extras</h2>
+                        <ul>
+                            <li><a href="default.htm">Markalar</a></li>
+                            <li><a href="default.htm">Gift Vouchers</a></li>
+                            <li><a href="default.htm">Affiliates</a></li>
+                            <li><a href="default.htm">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="column last">
+                        <h2>Hesabım</h2>
+                        <ul>
+                            <li><a href="login.html">My Account</a></li>
+                            <li><a href="orders.html">Order History</a></li>
+                            <li><a href="default.htm">Wish List</a></li>
+                            <li><a href="default.htm">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </footer>
+                <div id="copyright">
+                    <div class="float-right">Fatih HACIİBRAHİMOĞLU</div>
+                    İnternet Programcılığı 2 Final Projesi
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
